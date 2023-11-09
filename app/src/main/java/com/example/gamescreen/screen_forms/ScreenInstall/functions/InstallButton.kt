@@ -6,6 +6,8 @@ import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -22,8 +24,9 @@ fun InstallButton () {
             .padding(bottom = 70.dp),
         contentAlignment = Alignment.BottomCenter,
     ) {
+        val label = remember{mutableStateOf("Install")}
         Button(
-            onClick = {},
+            onClick = {label.value = "Processing..."},
             modifier = Modifier
                 //.offset(0.dp, 100.dp)
                 .height(50.dp)
@@ -32,7 +35,7 @@ fun InstallButton () {
             colors = ButtonDefaults.buttonColors(Color(0xFFF4D144)),
             elevation = ButtonDefaults.elevation(defaultElevation = 10.dp)
         ) {
-            Text(text = "Install",
+            Text(text = label.value,
                 fontSize = 24.sp,
                 color = Color.Black
             )
