@@ -3,6 +3,7 @@ package com.example.gamescreen.screen_forms.ScreenInstall
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -18,7 +19,7 @@ fun ScreenInstall (game: Game) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .background(game.background)
+            .background(game.background).padding(bottom = 150.dp)
     ) {
         item {
             GamePhoto(id_photo = game.photo)
@@ -56,10 +57,6 @@ fun ScreenInstall (game: Game) {
         itemsIndexed(game.critics)
         { _, item ->
             ReviewShow(review = item)
-        }
-        item {
-            Box(modifier = Modifier.size(150.dp)) {
-            }
         }
     }
     InstallButton()
