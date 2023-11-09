@@ -16,16 +16,16 @@ import com.example.gamescreen.screen_forms.ScreenInstall.games.functions.*
 
 @Composable
 fun ScreenInstall (game: Game) {
-    LazyColumn(
+    LazyColumn(   //главный экран (скролл)
         modifier = Modifier
             .fillMaxSize()
             .background(game.background).padding(bottom = 150.dp)
     ) {
         item {
-            GamePhoto(id_photo = game.photo)
+            GamePhoto(id_photo = game.photo)  //главное фото игры
         }
         item {
-            GameNameRate(
+            GameNameRate(                  //контейнер рейтинга игры с иконкой
                 game_name = game.name,
                 game_rate = game.rate,
                 review_count = game.counts,
@@ -34,30 +34,30 @@ fun ScreenInstall (game: Game) {
             )
         }
         item {
-            GameTags(
+            GameTags(              //теги игры
                 tags = game.tags
             )
         }
         item {
-            GameDescription(
+            GameDescription(                //описание игры
                 game_about = game.about
             )
         }
         item {
-            ScreenShots(
+            ScreenShots(                       //лента скриншотов
                 screenshots = game.screenshots
             )
         }
         item {
-            ReviewBox()
+            ReviewBox()               //надпись Review & Ratings
         }
         item {
-            RateValue(game_rate = game.rate, review_count = game.counts)
+            RateValue(game_rate = game.rate, review_count = game.counts)  //рейтинг игры
         }
         itemsIndexed(game.critics)
         { _, item ->
-            ReviewShow(review = item)
+            ReviewShow(review = item)    //отзывы критиков
         }
     }
-    InstallButton()
+    InstallButton()   //кнопка Install (при нажатии - Processing)
 }

@@ -5,17 +5,17 @@ import com.example.gamescreen.screen_forms.ScreenInstall.functions.GameScreensho
 import com.example.gamescreen.screen_forms.ScreenInstall.functions.ReviewList
 
 class Game (
-    _name : String,
-    _photo : Int,
-    _icon : Int,
-    _icon_size : Int,
-    _rate : Double,
-    _counts : String,
-    _tags : List<String>,
-    _about : String,
-    _screenshots : List<GameScreenshots>,
-    _critics : List<ReviewList>,
-    _background : Color
+    _name : String,   //Название игры
+    _photo : Int,     //Главное фото игры (сверху)
+    _icon : Int,     //Иконка игры (квадратная)
+    _icon_size : Int,  //Размер иконки
+    _rate : Double,  //рейтинг игры
+    _counts : String,  //кол-во скачиваний (строка)
+    _tags : List<String>,   //теги игры
+    _about : String,  //описание игры
+    _screenshots : List<GameScreenshots>,  //лента скриншотов
+    _critics : List<ReviewList>,  //обзоры
+    _background : Color   //цвет общего фона
 ){
     val name = _name
     val photo = _photo
