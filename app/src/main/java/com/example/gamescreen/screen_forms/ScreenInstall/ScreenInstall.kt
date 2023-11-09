@@ -9,7 +9,11 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.view.WindowCompat
+import com.example.gamescreen.games.cod_mw_3
+import com.example.gamescreen.games.wow_wotlk
 import com.example.gamescreen.screen_forms.ScreenInstall.functions.*
 import com.example.gamescreen.screen_forms.ScreenInstall.games.Game
 import com.example.gamescreen.screen_forms.ScreenInstall.games.functions.*
@@ -60,4 +64,10 @@ fun ScreenInstall (game: Game) {
         }
     }
     InstallButton()   //кнопка Install (при нажатии - Processing)
+}
+@Preview(showBackground = true)
+@Composable
+fun PreviewScreenInstall () {
+    ApplySystemBarColors()
+    ScreenInstall(game = wow_wotlk)
 }
