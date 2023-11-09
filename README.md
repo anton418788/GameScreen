@@ -6,6 +6,23 @@
 3. Реализована кнопка, которая остается на месте при скролле экрана (не было уточнений, должна ли она оставаться в таком положении. Поэтому мной было принято логичное решение)
 4. Так как все реализовано через поля, то, соответственно, нет никаких "костыльных" значений. Весь текст, картинки, рейтинг привязаны исключительно к объекту и не прописываются константами в методах.
 5. Под каждый метод был прописан Review модуль, чтобы просмотреть контейнер отдельно от экрана
+## Скриншоты:
+___World of Warcraft: Wrath of the Lich King___
+
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen1.jpg" width="250" height="558">>
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen2.jpg" width="250" height="558">>
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen3.jpg" width="250" height="558">>
+
+___Dota 2___
+
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen4.jpg" width="250" height="558">>
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen5.jpg" width="250" height="558">>
+
+___Call of Duty: Modern Warfare III___
+
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen6.jpg" width="250" height="558">>
+<img src="https://github.com/anton418788/GameScreen/blob/master/screen7.jpg" width="250" height="558">>
+
 ## Описание работы главного файла:
 В главном файле ___MainActivity___ реазилуется функция "Запустить экран просмотра игры" (___ScreenInstall(game : Game)___). На вход метод принимает объект класса ___Game___. 
 Объекты данного класса носят в себе поля "вариативных настроек" экрана (то бишь при смене значений этих полей меняется визуальное наполнение блоков).
