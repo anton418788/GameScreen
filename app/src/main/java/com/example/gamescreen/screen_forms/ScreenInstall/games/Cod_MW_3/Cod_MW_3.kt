@@ -27,11 +27,11 @@ val cod_mw_3 = Game(
         GameScreenshots(R.drawable.mwiii_reveal_full_007),
     ),
     _critics = listOf(
-        ReviewList(R.drawable.human1, "Mihail Krug", "April 25, 2009","Very nice game! it's perfect! \n" +
-                "I play 25 hours a day. A little more and the Lich King will give me his horse!"),
-        ReviewList(R.drawable.human2, "Artemiy Lebedev", "June 2, 2008","This game will destroy your family... But you will have a level 80 warrior"),
-        ReviewList(R.drawable.human3, "Egor Krid", "December 25, 2010","\"You no take candle!\" 10 cobalts out of 10!"),
-        ReviewList(R.drawable.human4, "Alexandr Petrov", "September 19, 2011","You've already read three reviews... Isn't that enough?")
+        ReviewList(R.drawable.codava1, "Petr Melnik", "April 24, 2009","Okeeey... \n" +
+                "This game made me cry"),
+        ReviewList(R.drawable.codava2, "Anton Shastun", "June 13, 2008","I bought the entire series of games. You don't have to look for me. Now only Captain Price can find me"),
+        ReviewList(R.drawable.codava3, "Igor Redka", "December 2, 2010","I don't know what else to write. I’ll write that today the weather is good"),
+        ReviewList(R.drawable.codava4, "John Snow", "September 18, 2011","You've already read three reviews... Isn't that enough?")
     ),
     _background = Color(0xFF050B18)
 )

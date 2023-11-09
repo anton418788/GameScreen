@@ -30,11 +30,11 @@ val dota2 = Game(
         GameScreenshots(R.drawable.screenshot6),
     ),
     _critics = listOf(
-        ReviewList(R.drawable.human1, "Mihail Krug", "April 25, 2009","Very nice game! it's perfect! \n" +
-                "I play 25 hours a day. A little more and the Lich King will give me his horse!"),
-        ReviewList(R.drawable.human2, "Artemiy Lebedev", "June 2, 2008","This game will destroy your family... But you will have a level 80 warrior"),
-        ReviewList(R.drawable.human3, "Egor Krid", "December 25, 2010","\"You no take candle!\" 10 cobalts out of 10!"),
-        ReviewList(R.drawable.human4, "Alexandr Petrov", "September 19, 2011","You've already read three reviews... Isn't that enough?")
+        ReviewList(R.drawable.dotaava1, "Alex Rade", "April 25, 2009","Why did I download this game? \n" +
+                "In 5 minutes of playing I heard more insults than in my entire life"),
+        ReviewList(R.drawable.dotaava2, "Sergey Karandash", "June 2, 2008","Where is our pig at the top five?..."),
+        ReviewList(R.drawable.dotaava3, "Robert Kchau", "December 25, 2010","I've never played Dota. I don’t know what else to write here)"),
+        ReviewList(R.drawable.dotaava4, "Artem Makov", "September 19, 2011","You've already read three reviews... Isn't that enough?")
     ),
     _background = Color(0xFF050B18)
 )

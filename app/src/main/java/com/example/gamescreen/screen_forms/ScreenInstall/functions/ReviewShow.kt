@@ -54,7 +54,7 @@ fun ReviewShow (review : ReviewList) {
                 )
             }
         }
-        Box(modifier = Modifier.padding(top = 10.dp)) {
+        Box(modifier = Modifier.padding(top = 10.dp, end = 10.dp)) {
             Text(
                 text = review.review_desc,
                 fontSize = 12.sp,
