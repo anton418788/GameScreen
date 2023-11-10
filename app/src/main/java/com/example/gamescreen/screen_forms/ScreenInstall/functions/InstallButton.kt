@@ -1,5 +1,6 @@
 package com.example.gamescreen.screen_forms.ScreenInstall.functions
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
@@ -21,7 +22,8 @@ fun InstallButton () {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(bottom = 70.dp),
+            .padding(bottom = 70.dp)
+            .background(Color.Transparent),
         contentAlignment = Alignment.BottomCenter,
     ) {
         val label = remember{mutableStateOf("Install")}
