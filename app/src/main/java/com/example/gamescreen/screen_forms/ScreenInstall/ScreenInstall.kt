@@ -23,7 +23,7 @@ fun ScreenInstall (game: Game) {
     LazyColumn(   //главный экран (скролл)
         modifier = Modifier
             .fillMaxSize()
-            .background(game.background)
+            .background(game.background).padding(bottom = 150.dp)
     ) {
         item {
             GamePhoto(id_photo = game.photo)  //главное фото игры

@@ -14,9 +14,9 @@ class MainActivity : ComponentActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             ApplySystemBarColors()
-            //ScreenInstall(game = dota2)
+            ScreenInstall(game = dota2)
             //ScreenInstall(game = wow_wotlk)
-            ScreenInstall(game = cod_mw_3)
+            //ScreenInstall(game = cod_mw_3)
         }
     }
 }
